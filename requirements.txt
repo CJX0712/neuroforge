@@ -1,0 +1,5 @@
+# NeuroForge 核心依赖（离线兜底链路必需，全部 pin 死）
+numpy==2.5.3
+gymnasium==1.3.0
+pyyaml==6.0.2
+pytest==8.3.5

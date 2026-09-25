@@ -1,0 +1,5 @@
+# NeuroForge SOTA 后端（可选）：Stable-Baselines3 + Optuna + PyTorch
+# 启用后解锁 PPO/DQN(SB3) 与超参搜索；缺失时系统自动降级为纯 numpy DQN。
+stable-baselines3==2.9.0
+optuna==5.0.0
+torch==2.14.0

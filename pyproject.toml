@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuroforge"
+version = "0.1.0"
+description = "NeuroForge: 深度强化学习智能体训练系统（复用 Gymnasium / Stable-Baselines3 / Optuna）"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.0",
+    "gymnasium>=1.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+sota = [
+    "stable-baselines3>=2.0",
+    "optuna>=3.0",
+    "torch>=2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
